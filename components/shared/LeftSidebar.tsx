@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import clsx from "clsx";
-import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import clsx from 'clsx';
+import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
-import { sidebarLinks } from "@/constants";
+import { sidebarLinks } from '@/constants';
 
 function LeftSidebar() {
   const pathname = usePathname();
@@ -13,7 +13,7 @@ function LeftSidebar() {
   return (
     <section className="custom-scrollbar leftsidebar">
       <div className="flex w-full flex-1 flex-col gap-6 px-6">
-        {sidebarLinks.map((link) => {
+        {sidebarLinks.map(link => {
           const isActive =
             (pathname.includes(link.route) && link.route.length > 1) ||
             pathname === link.route;
@@ -22,9 +22,9 @@ function LeftSidebar() {
             <Link
               title={link.label}
               className={clsx(
-                "leftsidebar_link",
-                isActive && "bg-primary-500",
-                pathname && "p-0"
+                'leftsidebar_link',
+                isActive && 'bg-primary-500',
+                pathname && 'p-0',
               )}
               key={link.route}
               href={link.route}

@@ -4,7 +4,7 @@ async function Page() {
       <h1 className="head-text bg-blue-500 text-base rounded px-4 py-2 text-white">
         Onboarding
       </h1>
-      <p>Welcome to the app! Let's get you set up.</p>
+      <p>Welcome to the app! Let&apos;s get you set up.</p>
     </main>
   );
 }
