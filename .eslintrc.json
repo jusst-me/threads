@@ -40,5 +40,9 @@
         "tsx": "never"
       }
     ]
+  },
+  "root": true,
+  "tailwindcss": {
+    "config": "./tailwind.config.ts"
   }
 }
