@@ -1,0 +1,11 @@
+{
+  "stylelint.validate": ["css", "scss", "postcss"],
+  "stylelint.enable": true,
+
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+
+  "files.eol": "\n",
+
+  "breadcrumbs.enabled": true
+}
