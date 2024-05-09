@@ -11,6 +11,7 @@
   "plugins": [
     "jsx-a11y",
     "prettier",
+    "import",
     "simple-import-sort",
     "@typescript-eslint",
     "tailwindcss"
@@ -22,27 +23,25 @@
   "rules": {
     "linebreak-style": ["error", "unix"],
     "no-console": ["error", { "allow": ["warn", "error"] }],
+    "arrow-body-style": ["error", "as-needed"],
 
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
 
     "prettier/prettier": "error",
 
+    "react/require-default-props": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
 
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "js": "never",
-        "jsx": "never",
-        "ts": "never",
-        "tsx": "never"
-      }
-    ]
+    "tailwindcss/no-custom-classname": "off"
   },
   "root": true,
-  "tailwindcss": {
-    "config": "./tailwind.config.ts"
+  "settings": {
+    "tailwindcss": {
+      "config": "./tailwind.config.ts"
+    }
   }
 }
