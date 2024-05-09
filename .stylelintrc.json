@@ -1,5 +1,9 @@
 {
-  "extends": ["stylelint-config-standard", "stylelint-config-concentric-order"],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-tailwindcss",
+    "stylelint-config-concentric-order"
+  ],
   "rules": {
     "alpha-value-notation": "number",
 
