@@ -75,7 +75,7 @@
   }
 
   .navigation_link {
-    @apply relative flex flex-col items-center gap-2 rounded-lg p-2 sm:flex-1 sm:px-2 sm:py-2.5 md:flex-row md:justify-start md:gap-4 md:p-4;
+    @apply relative flex flex-col items-center gap-2 rounded-lg p-2 text-light-1 sm:flex-1 sm:px-2 sm:py-2.5 md:flex-none md:flex-row md:justify-start md:gap-4 md:p-4 lg:justify-start;
   }
 
   .leftsidebar {

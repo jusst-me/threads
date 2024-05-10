@@ -27,7 +27,9 @@ export default function NavigationLink({ link }: Props) {
       href={link.route}
     >
       <Image src={link.imgURL} alt={link.label} width={24} height={24} />
-      <span className="max-lg:hidden">{link.label}</span>
+      <span className="hidden text-subtle-medium sm:block md:hidden lg:block lg:text-body-medium">
+        {link.label}
+      </span>
     </Link>
   );
 }
